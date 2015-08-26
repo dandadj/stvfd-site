@@ -1,0 +1,24 @@
+.Captain {
+    background-color: #c7c700 !important;
+    color: black !important;
+}
+
+.Lieutenant {
+    background-color: #c7c700 !important;
+    color: black !important;
+}
+
+.Firefighter {
+    background-color: #000000 !important;
+    color: white;
+}
+
+.Rookie {
+    background-color: #eb0404 !important;
+    color: black;
+}
+
+.Probationary {
+    background-color: #eb0404 !important;
+    color: black;
+}
