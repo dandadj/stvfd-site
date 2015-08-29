@@ -126,24 +126,23 @@
     <!-- Gallery -->
     <script type="text/ng-template" id="gallery.html">
         <div class="col s6 m3">
-            <div class="card" style="height: 200px">
-                <div class="card-image" style="height: 200px">
+            <div class="card">
+                <div class="card-image">
                     <img class="responsive-img" src={{gallery.CoverPicture}} ng-click="pc.OpenModal(gallery.Title)" style="cursor:pointer">
-
                     <span class="card-title">{{gallery.Title}}</span>
-                    <!-- Modal Structure -->
-                    <div id='{{gallery.Title}}' class="modal black" style="overflow: visible">
-                        <div class="modal-content">
-                            <h4 class="white-text flow-text">{{gallery.Title}}</h4>
-                            <div class="row">
-                                <div ng-repeat="pic in gallery.SubPictures" class="col s6 m3">
-                                    <img class="materialboxed responsive-img" ng-src={{pic}} />
-                                </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id='{{gallery.Title}}' class="modal black" style="overflow: visible">
+                    <div class="modal-content">
+                        <h4 class="white-text flow-text">{{gallery.Title}}</h4>
+                        <div class="row">
+                            <div ng-repeat="pic in gallery.SubPictures" class="col s6 m3">
+                                <img class="materialboxed responsive-img" ng-src={{pic}} />
                             </div>
                         </div>
-                        <div class="modal-footer black">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn white-text">Close</a>
-                        </div>
+                    </div>
+                    <div class="modal-footer black">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn white-text">Close</a>
                     </div>
                 </div>
             </div>
