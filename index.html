@@ -129,7 +129,7 @@
             <div class="card">
                 <div class="card-image">
                     <img class="responsive-img" src={{gallery.CoverPicture}} ng-click="pc.OpenModal(gallery.Title)" style="cursor:pointer">
-                    <span class="card-title">{{gallery.Title}}</span>
+                    <div class="card-title"><span class="flow-text">{{gallery.Title}}</span></div>
                 </div>
                 <!-- Modal Structure -->
                 <div id='{{gallery.Title}}' class="modal black" style="overflow: visible">
