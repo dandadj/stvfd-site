@@ -1,1 +1,1 @@
-[]
+[{"ID":1,"Title":"Incident 1","Description":"This is the first fake call","Date":"8/20/2015","Units":"E82,E81","_id":"70d7525ed2d94ebda9f04ab13040f1e7"},{"ID":null,"Title":"Incident 2","Description":"This is the first fake call. It has a longer description","Date":"8/22/2015","Units":"E82,E81,TO88","Pictures":["images/incident1_1.jpg","images/incident1_2.jpg"],"_id":"72dbbfeaf7454a2c991e3eb7b98fc5ac"}]

@@ -6,6 +6,7 @@ var express = require('express'); // call express
 var app = express(); // define our app using express
 var bodyParser = require('body-parser');
 var db = require('diskdb');
+var cors = require('cors'); app.use(cors());
 
 db = db.connect('./db', ['incidents']);
 console.log("There are currently " + db.incidents.count() + " incidents in the DB")
@@ -55,17 +56,17 @@ router.route('/incidents')
             console.error(error);
         }
 
-        var title = req.body.title; // set the bears name (comes from the request)
-        var description = req.body.description;
-        var date = req.body.date;
-        var units = req.body.units;
+        var title = req.body.Title; // set the bears name (comes from the request)
+        var description = req.body.Description;
+        var date = req.body.Date;
+        var units = req.body.Units;
 
         db.incidents.save({
-            id: new_id,
-            title: title,
-            description: description,
-            date: date,
-            units: units
+            ID: new_id,
+            Title: title,
+            Description: description,
+            Date: date,
+            Units: units
         });
         res.json({
             message: "Incident added with id " + new_id,

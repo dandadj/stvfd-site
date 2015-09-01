@@ -1,34 +1,10 @@
 (function () {
     var app = angular.module('firePage', []);
 
-    app.controller('IncidentController', function () {
-        this.incidents = [
-            {
-                Title: "Incident 1",
-                Description: "This was the first made up incident... that I made up. It has a slightly longer description than the other incidents.",
-                Date: Date.parse("8/22/2015"),
-                Units: ["E82", "TO88"],
-                Pictures: ["images/incident1_1.jpg", "images/incident1_2.jpg"]
-            },
-            {
-                Title: "Incident 2",
-                Description: "This was the second made up incident... that I made up",
-                Date: Date.parse("8/20/2015"),
-                Units: ["E82", "TO88", "E81"],
-                Pictures: ["images/incident2_1.jpg"]
-            },
-            {
-                Title: "Incident 3",
-                Description: "This was a boring call",
-                Date: Date.parse("8/17/2015"),
-                Units: ["C89"],
-                Pictures: []
-            }
-        ];
-    });
+
 
     app.controller('NavController', function () {
-        this.activeTab = 3;
+        this.activeTab = 4;
 
         this.setTab = function (i) {
             this.activeTab = i;

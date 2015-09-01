@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="firePage">
+<html data-ng-app="firePage">
 
 <head>
     <!--Import materialize.css-->
@@ -10,6 +10,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="incidentController.js"></script>
     <title>STVFD TEST PAGE</title>
 </head>
 
@@ -70,8 +71,8 @@
         </div>
 
         <!-- Incident Page -->
-        <div class="row" ng-show="nc.isSet(4)" ng-controller="IncidentController as ic">
-            <div ng-repeat="incident in ic.incidents" ng-include="'incident-card.html'"></div>
+        <div class="row" ng-show="nc.isSet(4)" data-ng-controller="IncidentController">
+            <div ng-repeat="incident in incidents" ng-include="'incident-card.html'"></div>
         </div>
 
     </div>
